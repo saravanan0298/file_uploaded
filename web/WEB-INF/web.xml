@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>Guru_upload</servlet-name>
+        <servlet-class>demotest.Guru_upload</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>FileUploadDBServlet</servlet-name>
+        <servlet-class>demotest.FileUploadDBServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Guru_downloaded</servlet-name>
+        <servlet-class>demotest.Guru_downloaded</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Guru_upload</servlet-name>
+        <url-pattern>/Guru_upload</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>FileUploadDBServlet</servlet-name>
+        <url-pattern>/uploadServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Guru_downloaded</servlet-name>
+        <url-pattern>/Guru_downloaded</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
